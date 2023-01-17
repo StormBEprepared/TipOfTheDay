@@ -1,0 +1,112 @@
+#topSide{
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  float:center;
+  min-width: 320px;
+  min-height: 300px;
+  display: flexbox;
+}
+#mainSide{
+  border:5px solid transparent;
+  padding:30px;
+  min-width: 320px;
+  display:flex;
+  text-align:left;
+  place-content: center;
+  float:center;
+  scroll-snap-type: x proximity;
+  display: flexbox;
+  height: auto;
+}
+#bottomSide{
+  text-align: center;
+  float:center;
+}
+
+body{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(255, 255, 255);
+  background-attachment: fixed;
+  margin:0;
+} 
+
+
+
+
+
+. #cardsBox{
+    display: grid;
+    place-content: center;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  p:not(:last-child) {
+    margin-bottom: 1.5em;
+  }
+  .card {
+    min-width: 320px;
+    display: flexbox;
+    padding: 35px;
+    margin: 5%;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(127, 124, 124, 0.149);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    transition: all .3s ease-out;
+    height: auto;    
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+  }
+  .card:hover{
+    border: 1px solid #ffffff;
+    box-shadow: 0 7px 50px 10px #000000aa;
+    filter: brightness(1.1);
+    transition: all .3s ease-out;
+}
+.card p{
+    float:left;
+    align-items: center;
+    font-size: 3.3rem;
+    display: flex;
+}
+
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(1.2deg);
+	}
+}
+
+
