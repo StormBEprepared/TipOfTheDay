@@ -67,6 +67,17 @@ body{
     animation: myAnim 2s ease 0s 1 normal forwards;
 
   }
+  .card-text {
+    
+    font-size: 1.1rem;
+    text-shadow: 1px black;
+  }
+  .card-footer {
+    float: center;
+    text-align: center;
+    display: inline;
+    margin-left: 50%;
+  }
   .card:hover{
     border: 1px solid #ffffff;
     box-shadow: 0 7px 50px 10px #000000aa;

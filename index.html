@@ -6,21 +6,26 @@
     <meta description="This is a webpage that I created myself.">
 
     <link rel="stylesheet" href="style.css">
-    <script href="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <section id="top">
       <div id="topSide">
         <p></p>
-        <button>Change</button>
+        <button onclick="ChangeQuote()">Change</button>
     </div>
 </section>
 <section id="mid">
     <div id="mainSide">
         <div class="card">
-            <p>
-              &emsp;"Knowing you know nothing means that you actually know a lot."</p>
+            <p class="card-text" id="card-text">
+              &emsp;"Knowing you know nothing means that you actually know a lot."
             </p>
+            
+            <p class="card-footer" id="card-footer">
+                Stefan Pintea
+            </p>
+
           </div>
     </div>
 </section>
