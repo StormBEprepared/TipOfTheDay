@@ -2,9 +2,21 @@
   text-align: center;
   float:center;
   min-width: 320px;
-  margin-top: 20rem;
+  margin-top: 5rem;
   display: flexbox;
 }
+h1{
+  font-size: 3rem;
+  color:white;
+  text-shadow: 2.4px 1.3px rgba(96, 93, 93, 0.516);
+  text-shadow: 1.5px 4px rgba(96, 93, 93, 0.516);
+
+}
+#OldMan{
+  animation: shutter-in-top 2s ease 0s 1 normal forwards;
+
+}
+
 #mainSide{
   border:5px solid transparent;
   padding:30px;
@@ -29,6 +41,7 @@ body{
   background-image: linear-gradient(to right bottom, #dab2ff, #76c1ff, #00caf9, #00cab9, #61bf6c);
       background-attachment: fixed;
   margin:0;
+  overflow:hidden;
 } 
 
 
@@ -70,13 +83,15 @@ body{
   .card-text {
     
     font-size: 1.1rem;
-    text-shadow: 1px black;
+    text-shadow: 2.4px 1.3px rgba(96, 93, 93, 0.516);
   }
   .card-footer {
     float: center;
     text-align: center;
     display: inline;
-    margin-left: 70%;
+    margin-left: 65%;
+    text-shadow: 2.4px 1.3px rgba(96, 93, 93, 0.516);
+
   }
   .card:hover{
     border: 1px solid #ffffff;
@@ -119,6 +134,20 @@ body{
 	75% {
 		transform: translateX(-6px) rotate(1.2deg);
 	}
+}
+
+@keyframes shutter-in-top {
+			
+  0% {
+    transform:rotateX(-100deg);
+    transform-origin:top;
+    opacity:0;
+  }
+  100% {
+    transform:rotateX(0deg);
+    transform-origin:top;
+    opacity:1;
+  }
 }
 
 

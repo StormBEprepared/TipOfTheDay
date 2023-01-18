@@ -78,3 +78,8 @@ function ChangeQuote(){
     document.getElementById("card-footer").innerHTML = `-${authors[day]}`;
 
 }
+
+function UpdateHeader(){
+  let date= new Date().toDateString();
+  document.getElementById("h1").innerHTML=`Today is ${date}. \n The quote for today is:`
+}
